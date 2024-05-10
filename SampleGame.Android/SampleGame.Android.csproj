@@ -6,6 +6,9 @@
     <RootNamespace>SampleGame.Android</RootNamespace>
     <AssemblyName>SampleGame.Android</AssemblyName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\osu.Framework.Android\osu.Framework.Android.csproj" />
     <ProjectReference Include="..\SampleGame\SampleGame.csproj" />
