@@ -4,6 +4,12 @@
     <TargetFramework>net8.0-ios</TargetFramework>
     <SupportedOSPlatformVersion>13.4</SupportedOSPlatformVersion>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
   <Import Project="..\osu.Framework.iOS.props" />
   <ItemGroup>
     <ProjectReference Include="..\osu.Framework.iOS\osu.Framework.iOS.csproj" />

@@ -16,6 +16,12 @@
   <PropertyGroup Condition="'$(Platform)' == 'iPhoneSimulator'">
     <RuntimeIdentifiers>iossimulator-x64</RuntimeIdentifiers>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
   <Import Project="..\..\..\..\osu.Framework.iOS.props" />
   <ItemGroup>
     <ProjectReference Include="..\TemplateGame.Game\TemplateGame.Game.csproj" />
