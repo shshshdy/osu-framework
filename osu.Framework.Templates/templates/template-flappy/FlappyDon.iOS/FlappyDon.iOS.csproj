@@ -9,12 +9,7 @@
          It only warns about not copying the library to the app bundle to save space,
          so there's nothing to be worried about. -->
     <NoWarn>MT7091</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Platform)' == 'iPhone'">
-    <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Platform)' == 'iPhoneSimulator'">
-    <RuntimeIdentifiers>iossimulator-x64</RuntimeIdentifiers>
+    <!--<OutputPath>$(SolutionDir)buildtest\$(Platform)</OutputPath>-->
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <CreatePackage>false</CreatePackage>
