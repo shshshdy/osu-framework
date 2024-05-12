@@ -43,43 +43,41 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleGame.Android", "Sampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Framework.Tests.Android", "osu.Framework.Tests.Android\osu.Framework.Tests.Android.csproj", "{07BCE24A-3A8E-43A8-8C1D-5B3C07C64FEF}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osu.Framework.iOS", "osu.Framework.iOS\osu.Framework.iOS.csproj", "{A01F48BF-4D50-4788-9989-BC8260CE2352}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Framework.iOS", "osu.Framework.iOS\osu.Framework.iOS.csproj", "{A01F48BF-4D50-4788-9989-BC8260CE2352}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "TemplateGame.Resources", "osu.Framework.Templates\templates\template-empty\TemplateGame.Resources\TemplateGame.Resources.csproj", "{99CFFC5A-7B3F-4621-8379-7CA8E2EAC277}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateGame.Resources", "osu.Framework.Templates\templates\template-empty\TemplateGame.Resources\TemplateGame.Resources.csproj", "{99CFFC5A-7B3F-4621-8379-7CA8E2EAC277}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "TemplateGame.Desktop", "osu.Framework.Templates\templates\template-empty\TemplateGame.Desktop\TemplateGame.Desktop.csproj", "{BF625690-2A9F-4505-9915-C18EF0AF4E23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateGame.Desktop", "osu.Framework.Templates\templates\template-empty\TemplateGame.Desktop\TemplateGame.Desktop.csproj", "{BF625690-2A9F-4505-9915-C18EF0AF4E23}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "TemplateGame.Game.Tests", "osu.Framework.Templates\templates\template-empty\TemplateGame.Game.Tests\TemplateGame.Game.Tests.csproj", "{6CFE7D73-33F7-41CB-9EBF-60A71E24F117}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateGame.Game.Tests", "osu.Framework.Templates\templates\template-empty\TemplateGame.Game.Tests\TemplateGame.Game.Tests.csproj", "{6CFE7D73-33F7-41CB-9EBF-60A71E24F117}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "TemplateGame.iOS", "osu.Framework.Templates\templates\template-empty\TemplateGame.iOS\TemplateGame.iOS.csproj", "{5CB299C7-CB61-4D91-92FB-89045566B9F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateGame.iOS", "osu.Framework.Templates\templates\template-empty\TemplateGame.iOS\TemplateGame.iOS.csproj", "{5CB299C7-CB61-4D91-92FB-89045566B9F2}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "FlappyDon.Resources", "osu.Framework.Templates\templates\template-flappy\FlappyDon.Resources\FlappyDon.Resources.csproj", "{1079EA26-C741-48EC-B2A0-8CB0DB0EBB70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyDon.Resources", "osu.Framework.Templates\templates\template-flappy\FlappyDon.Resources\FlappyDon.Resources.csproj", "{1079EA26-C741-48EC-B2A0-8CB0DB0EBB70}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "FlappyDon.iOS", "osu.Framework.Templates\templates\template-flappy\FlappyDon.iOS\FlappyDon.iOS.csproj", "{DB52C40B-D696-4F0B-9D04-81296048BB01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyDon.iOS", "osu.Framework.Templates\templates\template-flappy\FlappyDon.iOS\FlappyDon.iOS.csproj", "{DB52C40B-D696-4F0B-9D04-81296048BB01}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "FlappyDon.Game.Tests", "osu.Framework.Templates\templates\template-flappy\FlappyDon.Game.Tests\FlappyDon.Game.Tests.csproj", "{B8370600-681B-4FCB-84E1-7B32866F0BC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyDon.Game.Tests", "osu.Framework.Templates\templates\template-flappy\FlappyDon.Game.Tests\FlappyDon.Game.Tests.csproj", "{B8370600-681B-4FCB-84E1-7B32866F0BC1}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "FlappyDon.Desktop", "osu.Framework.Templates\templates\template-flappy\FlappyDon.Desktop\FlappyDon.Desktop.csproj", "{1DFA57E9-1F1A-4A58-9F09-1E093BEF348B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyDon.Desktop", "osu.Framework.Templates\templates\template-flappy\FlappyDon.Desktop\FlappyDon.Desktop.csproj", "{1DFA57E9-1F1A-4A58-9F09-1E093BEF348B}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "FlappyDon.Android", "FlappyDon.Android\FlappyDon.Android.csproj", "{7A17505F-DBE7-46D8-9951-A4D7E103CB5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyDon.Android", "FlappyDon.Android\FlappyDon.Android.csproj", "{7A17505F-DBE7-46D8-9951-A4D7E103CB5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyDon.Android", "FlappyDon.Android\FlappyDon.Android.csproj", "{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Framework.Templates", "osu.Framework.Templates\osu.Framework.Templates.csproj", "{26806DBB-41ED-4687-9E45-3CF3A535CCAA}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osu.Framework.Templates", "osu.Framework.Templates\osu.Framework.Templates.csproj", "{26806DBB-41ED-4687-9E45-3CF3A535CCAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Framework.Tests.iOS", "osu.Framework.Tests.iOS\osu.Framework.Tests.iOS.csproj", "{462DF8AE-9F58-4B68-8C8B-207D8FE9373D}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osu.Framework.Tests.iOS", "osu.Framework.Tests.iOS\osu.Framework.Tests.iOS.csproj", "{462DF8AE-9F58-4B68-8C8B-207D8FE9373D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleGame.iOS", "SampleGame.iOS\SampleGame.iOS.csproj", "{DA8BB754-D7AA-4B65-8A51-6C5262635633}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "SampleGame.iOS", "SampleGame.iOS\SampleGame.iOS.csproj", "{DA8BB754-D7AA-4B65-8A51-6C5262635633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Framework.Tests", "osu.Framework.Tests\osu.Framework.Tests.csproj", "{5618A95B-3A8E-4507-8D50-D5B0A2EFB838}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osu.Framework.Tests", "osu.Framework.Tests\osu.Framework.Tests.csproj", "{5618A95B-3A8E-4507-8D50-D5B0A2EFB838}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleGame.Desktop", "SampleGame.Desktop\SampleGame.Desktop.csproj", "{33DCA004-C9BF-4AE4-AAEF-34DDA871A2E3}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "SampleGame.Desktop", "SampleGame.Desktop\SampleGame.Desktop.csproj", "{33DCA004-C9BF-4AE4-AAEF-34DDA871A2E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Framework.Benchmarks", "osu.Framework.Benchmarks\osu.Framework.Benchmarks.csproj", "{A3B5AE32-89E6-4A23-9FB3-58CF1E2CB57E}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osu.Framework.Benchmarks", "osu.Framework.Benchmarks\osu.Framework.Benchmarks.csproj", "{A3B5AE32-89E6-4A23-9FB3-58CF1E2CB57E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Framework.SourceGeneration", "osu.Framework.SourceGeneration\osu.Framework.SourceGeneration.csproj", "{9B8019FF-B83B-49B2-A286-AE53E689EDE1}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osu.Framework.SourceGeneration", "osu.Framework.SourceGeneration\osu.Framework.SourceGeneration.csproj", "{9B8019FF-B83B-49B2-A286-AE53E689EDE1}"
-EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "osu.Framework.SourceGeneration.Tests", "osu.Framework.SourceGeneration.Tests\osu.Framework.SourceGeneration.Tests.csproj", "{B0CE4384-699E-4F58-A910-D8CE3A681A08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Framework.SourceGeneration.Tests", "osu.Framework.SourceGeneration.Tests\osu.Framework.SourceGeneration.Tests.csproj", "{B0CE4384-699E-4F58-A910-D8CE3A681A08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -309,18 +307,6 @@ Global
 		{7A17505F-DBE7-46D8-9951-A4D7E103CB5A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{7A17505F-DBE7-46D8-9951-A4D7E103CB5A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{7A17505F-DBE7-46D8-9951-A4D7E103CB5A}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Release|iPhone.Build.0 = Release|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{26806DBB-41ED-4687-9E45-3CF3A535CCAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26806DBB-41ED-4687-9E45-3CF3A535CCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26806DBB-41ED-4687-9E45-3CF3A535CCAA}.Debug|iPhone.ActiveCfg = Debug|Any CPU
@@ -433,7 +419,6 @@ Global
 		{B8370600-681B-4FCB-84E1-7B32866F0BC1} = {139F6FAA-EF59-4ADC-A69B-33CA7D1C1D4E}
 		{1DFA57E9-1F1A-4A58-9F09-1E093BEF348B} = {139F6FAA-EF59-4ADC-A69B-33CA7D1C1D4E}
 		{7A17505F-DBE7-46D8-9951-A4D7E103CB5A} = {139F6FAA-EF59-4ADC-A69B-33CA7D1C1D4E}
-		{3A1CE4B3-BB4D-4819-B603-25CD51B12CBB} = {139F6FAA-EF59-4ADC-A69B-33CA7D1C1D4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27D12E10-E38E-4ECE-8DD1-77E8C387B2DD}
