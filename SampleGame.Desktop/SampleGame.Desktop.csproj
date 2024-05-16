@@ -1,8 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="Project">
     <TargetFramework>net8.0</TargetFramework>
-    <OutputType>WinExe</OutputType>
+    <OutputType Condition="$(Configuration) == 'Debug'">Exe</OutputType>
+    <OutputType Condition="$(Configuration) == 'Release'">WinExe</OutputType>
   </PropertyGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="osu.Framework" />
+  </ItemGroup>
   <ItemGroup Label="Project References">
     <ProjectReference Include="..\osu.Framework\osu.Framework.csproj" />
     <ProjectReference Include="..\SampleGame\SampleGame.csproj" />

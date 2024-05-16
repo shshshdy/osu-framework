@@ -40,7 +40,14 @@ namespace osu.Framework.Configuration
             InputHandlers = inputHandlers;
 
             Load();
-
+            //AOT support
+            if (DateTime.Now.Day < 0)
+            {
+                subscribe(new Bindable<bool>());
+                subscribe(new Bindable<osuTK.Vector2>());
+                subscribe(new Bindable<float>());
+                subscribe(new Bindable<double>());
+            }
             bindToHandlersBindables();
         }
 

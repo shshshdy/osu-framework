@@ -13,8 +13,10 @@ namespace SampleGame.Desktop
         public static void Main(string[] args)
         {
             using (GameHost host = Host.GetSuitableDesktopHost(@"sample-game"))
-            using (Game game = new SampleGameGame())
-                host.Run(game);
+            {
+                using (Game game = new SampleGameGame())
+                    host.Run(game);
+            }
         }
     }
 }

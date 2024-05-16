@@ -6,6 +6,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Numerics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using osu.Framework.Graphics.Rendering.Vertices;
@@ -39,7 +40,18 @@ namespace osu.Framework.Graphics.Veldrid.Vertices
         {
             foreach (FieldInfo field in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
             {
-                int fieldOffset = currentOffset + Marshal.OffsetOf(type, field.Name).ToInt32();
+                int fieldOffset;
+                if (type.FullName == typeof(TexturedVertex2D).FullName)
+                {
+                    fieldOffset = currentOffset + Marshal.OffsetOf<TexturedVertex2D>(field.Name).ToInt32();
+
+                }
+                else
+                {
+                    //AOT not Support 需要改为 Marshal.OffsetOf<T>执行
+                    Debug.Assert(false);
+                    fieldOffset = currentOffset + Marshal.OffsetOf(type, field.Name).ToInt32();
+                }
 
                 if (typeof(IVertex).IsAssignableFrom(field.FieldType))
                 {
