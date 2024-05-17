@@ -11,6 +11,7 @@ using osu.Framework.Graphics.Sprites;
 using osu.Framework.Graphics.Textures;
 using System.IO;
 using osu.Framework.Graphics.UserInterface;
+using System;
 
 namespace SampleGame
 {
@@ -24,7 +25,7 @@ namespace SampleGame
         [BackgroundDependencyLoader]
         private void load()
         {
-            using (var stream = File.OpenRead("logo.png"))
+            using (var stream = File.OpenRead(Path.Combine(AppContext.BaseDirectory, "logo.png")))
             {
                 texture = Texture.FromStream(Host.Renderer, stream)!;
             }
