@@ -3,6 +3,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <OutputType Condition="$(Configuration) == 'Debug'">Exe</OutputType>
     <OutputType Condition="$(Configuration) == 'Release'">WinExe</OutputType>
+    <AssemblyName>SampleGameDesktop</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <TrimmerRootAssembly Include="osu.Framework" />

@@ -189,6 +189,7 @@ namespace osu.Framework.Logging
         /// <param name="outputToListeners">Whether the message should be sent to listeners of <see cref="Debug"/> and <see cref="Console"/>. True by default.</param>
         public static void Log(string message, LoggingTarget target = LoggingTarget.Runtime, LogLevel level = LogLevel.Verbose, bool outputToListeners = true)
         {
+            //Console.WriteLine(message);
             log(message, target, null, level, outputToListeners: outputToListeners);
         }
 

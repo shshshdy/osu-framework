@@ -19,7 +19,7 @@ namespace osu.Framework.Platform.MacOS
         private static readonly IntPtr sel_scrollingdeltay = Selector.Get("scrollingDeltaY");
         private static readonly IntPtr sel_respondstoselector_ = Selector.Get("respondsToSelector:");
 
-        private delegate void ScrollWheelDelegate(IntPtr handle, IntPtr selector, IntPtr theEvent); // v@:@
+        public delegate void ScrollWheelDelegate(IntPtr handle, IntPtr selector, IntPtr theEvent); // v@:@
 
         private IntPtr originalScrollWheel;
         private ScrollWheelDelegate scrollWheelHandler;
