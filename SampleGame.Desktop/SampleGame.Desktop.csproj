@@ -9,6 +9,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <!--XCode15 + iOS17-->
+    <LinkerArg Include="-ld64" />
     <TrimmerRootAssembly Include="osu.Framework" />
   </ItemGroup>
   <ItemGroup Label="Project References">
