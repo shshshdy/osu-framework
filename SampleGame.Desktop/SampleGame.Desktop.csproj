@@ -12,6 +12,8 @@
     <!--XCode15 + iOS17-->
     <LinkerArg Include="-ld64" />
     <TrimmerRootAssembly Include="osu.Framework" />
+    <TrimmerRootAssembly Include="Vortice.DXGI" />
+    <TrimmerRootAssembly Include="Vortice.Direct3D11" />
   </ItemGroup>
   <ItemGroup Label="Project References">
     <ProjectReference Include="..\osu.Framework\osu.Framework.csproj" />
