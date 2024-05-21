@@ -10,10 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!--XCode15 + iOS17-->
-    <LinkerArg Include="-ld64" />
+    <LinkerArg Condition="$([MSBuild]::IsOSPlatform('osx'))" Include="-ld64" />
     <TrimmerRootAssembly Include="osu.Framework" />
-    <TrimmerRootAssembly Include="Vortice.DXGI" />
-    <TrimmerRootAssembly Include="Vortice.Direct3D11" />
+    <TrimmerRootAssembly Condition="$([MSBuild]::IsOSPlatform('windows'))" Include="Vortice.DXGI" />
+    <TrimmerRootAssembly Condition="$([MSBuild]::IsOSPlatform('windows'))" Include="Vortice.Direct3D11" />
     <TrimmerRootAssembly Include="ppy.Veldrid" />
     <TrimmerRootAssembly Include="ppy.Veldrid.SPIRV" />
   </ItemGroup>
