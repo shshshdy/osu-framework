@@ -106,6 +106,15 @@ namespace osu.Framework
 
         protected Game()
         {
+            //AOT Support
+            if (DateTime.Now.Year < 0)
+            {
+                var list  = new List<Type>();
+                list.Add(typeof(List<Veldrid.ResourceLayoutDescription>));
+                list.Add(typeof(List<Veldrid.ResourceLayoutElementDescription>));
+                list.Add(typeof(List<Veldrid.VertexElementDescription>));
+
+            }
             RelativeSizeAxes = Axes.Both;
 
             base.AddInternal(content = new Container

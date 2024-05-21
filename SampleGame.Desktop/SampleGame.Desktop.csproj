@@ -14,6 +14,8 @@
     <TrimmerRootAssembly Include="osu.Framework" />
     <TrimmerRootAssembly Include="Vortice.DXGI" />
     <TrimmerRootAssembly Include="Vortice.Direct3D11" />
+    <TrimmerRootAssembly Include="ppy.Veldrid" />
+    <TrimmerRootAssembly Include="ppy.Veldrid.SPIRV" />
   </ItemGroup>
   <ItemGroup Label="Project References">
     <ProjectReference Include="..\osu.Framework\osu.Framework.csproj" />
