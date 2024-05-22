@@ -12,6 +12,7 @@ using osu.Framework.Graphics.Textures;
 using System.IO;
 using osu.Framework.Graphics.UserInterface;
 using System;
+using osu.Framework.IO.Stores;
 
 namespace SampleGame
 {
@@ -25,6 +26,10 @@ namespace SampleGame
         [BackgroundDependencyLoader]
         private void load()
         {
+            var strore = new NamespacedResourceStore<byte[]>(new DllResourceStore(typeof(SampleGameGame).Assembly), @"Resources");
+            Resources.AddStore(strore);
+            AddFont(Resources, "Fonts/simsun/simsun", Fonts);
+
             using (var stream = File.OpenRead(Path.Combine(AppContext.BaseDirectory, "logo.png")))
             {
                 texture = Texture.FromStream(Host.Renderer, stream)!;
@@ -65,6 +70,12 @@ namespace SampleGame
                 i++;
                 circle.Colour = i % 2 == 0 ? Colour4.Yellow : Colour4.Red;
             };
+            Add(new CustomTextBox()
+            {
+                Text = @"C中文",
+                Size = new Vector2(300, 25),
+                Position = new Vector2(220, 20),
+            });
             if (RuntimeInfo.IsMobile)
             {
                 circle.Scale = new Vector2(2, 2);
