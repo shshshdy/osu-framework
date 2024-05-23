@@ -13,6 +13,7 @@ using System.IO;
 using osu.Framework.Graphics.UserInterface;
 using System;
 using osu.Framework.IO.Stores;
+using osu.Framework.Configuration;
 
 namespace SampleGame
 {
@@ -24,7 +25,7 @@ namespace SampleGame
         private Texture texture = null!;
         private Button btn = null!;
         [BackgroundDependencyLoader]
-        private void load()
+        private void load(FrameworkConfigManager config)
         {
             var strore = new NamespacedResourceStore<byte[]>(new DllResourceStore(typeof(SampleGameGame).Assembly), @"Resources");
             Resources.AddStore(strore);
@@ -40,8 +41,9 @@ namespace SampleGame
                 Anchor = Anchor.Centre,
                 Origin = Anchor.Centre,
                 Size = new Vector2(350, 350),
-                Colour = Color4.Tomato,
+                Colour = Color4.Tomato
             });
+            box.Hide();
             Add(new Sprite
             {
                 Name = "Sprite",
@@ -70,10 +72,10 @@ namespace SampleGame
                 i++;
                 circle.Colour = i % 2 == 0 ? Colour4.Yellow : Colour4.Red;
             };
-            Add(new CustomTextBox()
+            Add(new CustomTextBox(20)
             {
-                Text = @"C中文",
-                Size = new Vector2(300, 25),
+                Text = @"cC中文sfdASDF",
+                Size = new Vector2(300, 20),
                 Position = new Vector2(220, 20),
             });
             if (RuntimeInfo.IsMobile)

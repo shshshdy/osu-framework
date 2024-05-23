@@ -7,13 +7,19 @@ using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Graphics.UserInterface;
 using osu.Framework.Graphics.Containers;
-using System;
 
 namespace SampleGame
 {
     public partial class CustomTextBox : BasicTextBox
     {
-        protected override Drawable GetDrawableCharacter(char c) => new ScalingText(c, FontSize);
+        public CustomTextBox(float fontSize = 20)
+        {
+            FontSize = fontSize;
+        }
+        protected override Drawable GetDrawableCharacter(char c)
+        {
+            return new ScalingText(c, FontSize);
+        }
 
         private partial class ScalingText : CompositeDrawable
         {
@@ -21,30 +27,14 @@ namespace SampleGame
 
             public ScalingText(char c, float textSize)
             {
-                Console.WriteLine(c);
-                if (c != 'C')
+                AddInternal(text = new SpriteText
                 {
-                    text = new SpriteText
-                    {
-                        Anchor = Anchor.Centre,
-                        Origin = Anchor.Centre,
-                        //Position = new Vector2(0, 10),
-                        Text = c.ToString(),
-                        Font = FrameworkFont.Condensed.With(size: textSize),
+                    Anchor = Anchor.Centre,
+                    Origin = Anchor.Centre,
+                    Text = c.ToString(),
+                    Font = FrameworkFont.Condensed.With(size: textSize),
 
-                    };
-                }
-                else
-                {
-                    text = new SpriteText
-                    {
-                        Anchor = Anchor.Centre,
-                        Origin = Anchor.Centre,
-                        Text = c.ToString(),
-                        Font = FrameworkFont.Condensed.With(size: textSize),
-                    };
-                }
-                AddInternal(text);
+                });
             }
 
             protected override void LoadComplete()
