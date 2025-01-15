@@ -6,7 +6,6 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Numerics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using osu.Framework.Graphics.Rendering.Vertices;
@@ -48,7 +47,7 @@ namespace osu.Framework.Graphics.Veldrid.Vertices
                 }
                 else
                 {
-                    //AOT not Support 需要改为 Marshal.OffsetOf<T>执行
+                    //AOT not Support 锟斤拷要锟斤拷为 Marshal.OffsetOf<T>执锟斤拷
                     Debug.Assert(false);
                     fieldOffset = currentOffset + Marshal.OffsetOf(type, field.Name).ToInt32();
                 }

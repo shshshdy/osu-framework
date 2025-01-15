@@ -338,5 +338,4 @@ fabric.properties
 inspectcodereport.xml
 inspectcode
 
-.idea/.idea.osu-framework.Desktop/.idea/misc.xml
-.idea/.idea.osu-framework.Android/.idea/deploymentTargetDropDown.xml
+**/.idea/

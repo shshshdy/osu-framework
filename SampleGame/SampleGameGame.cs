@@ -12,8 +12,12 @@ using osu.Framework.Graphics.Textures;
 using System.IO;
 using osu.Framework.Graphics.UserInterface;
 using System;
+using osu.Framework.Bindables;
 using osu.Framework.IO.Stores;
 using osu.Framework.Configuration;
+using osu.Framework.Configuration.Tracking;
+using SixLabors.ImageSharp;
+using Size = System.Drawing.Size;
 
 namespace SampleGame
 {
@@ -27,6 +31,9 @@ namespace SampleGame
         [BackgroundDependencyLoader]
         private void load(FrameworkConfigManager config)
         {
+            //修改分辩率
+            var size = config.GetBindable<Size>(FrameworkSetting.WindowedSize);
+            size.Value = new Size(1024, 768);
             var strore = new NamespacedResourceStore<byte[]>(new DllResourceStore(typeof(SampleGameGame).Assembly), @"Resources");
             Resources.AddStore(strore);
             AddFont(Resources, "Fonts/simsun/simsun", Fonts);
@@ -43,7 +50,7 @@ namespace SampleGame
                 Size = new Vector2(350, 350),
                 Colour = Color4.Tomato
             });
-            box.Hide();
+            // box.Hide();
             Add(new Sprite
             {
                 Name = "Sprite",
@@ -72,10 +79,10 @@ namespace SampleGame
                 i++;
                 circle.Colour = i % 2 == 0 ? Colour4.Yellow : Colour4.Red;
             };
-            Add(new CustomTextBox(20)
+            Add(new CustomTextBox(30)
             {
                 Text = @"cC中文sfdASDF",
-                Size = new Vector2(300, 20),
+                Size = new Vector2(300, 30),
                 Position = new Vector2(220, 20),
             });
             if (RuntimeInfo.IsMobile)
